@@ -31,8 +31,8 @@ class PokemonEntity(models.Model):
                                 on_delete=models.SET_NULL,
                                 null=True,
                                 blank=True,
-                                related_name="name_pokemon",
-                                verbose_name='Имя покемона')
+                                related_name="entities",
+                                verbose_name='Тип покемона')
     appeared_at = models.DateTimeField(null=True, verbose_name='Время появления')
     disappeared_at = models.DateTimeField(null=True, verbose_name='Время исчезновения')
     level = models.IntegerField(blank=True, null=True, verbose_name='Уровень')
